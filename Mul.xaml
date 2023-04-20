@@ -1,0 +1,26 @@
+﻿<Window x:Class="Practika.Mul"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practika"
+        mc:Ignorable="d"
+        Title="Mul" Height="299" Width="478" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button Name="M" IsDefault="True" Content="Выполнить" Margin="34,211,0,0" Height="36" Click="Mull" HorizontalAlignment="Left" Width="248" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.5" FontFamily="Times New Roman" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF4365FB" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button Name="B" IsDefault="True" Content="Назад" Margin="342,211,0,0" Height="36" Click="Back" HorizontalAlignment="Left" Width="112" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.5" FontFamily="Times New Roman" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF4365FB" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <TextBox Name="One" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  HorizontalAlignment="Left" Height="28" Margin="10,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="112" RenderTransformOrigin="1.692,2.739" TextAlignment="Center"/>
+        <TextBox Name="Two" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  HorizontalAlignment="Center" Height="28" Margin="10,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="112" RenderTransformOrigin="1.692,2.739" TextAlignment="Center"/>
+        <TextBox Name="Tre" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  HorizontalAlignment="Left" Height="26" Margin="342,138,0,0" TextWrapping="NoWrap"  VerticalAlignment="Top" Width="112" RenderTransformOrigin="1.692,2.739" TextAlignment="Center" IsEnabled="False" BorderBrush="White" FontSize="20" FontWeight="Bold"/>
+        <Label Content="*"  HorizontalAlignment="Left" Margin="145,133,0,0" VerticalAlignment="Top" Height="36" Width="25" FontSize="20"/>
+        <Label Content="="  HorizontalAlignment="Left" Margin="311,133,0,0" VerticalAlignment="Top" Height="36" Width="25" FontSize="20"/>
+    </Grid>
+</Window>
