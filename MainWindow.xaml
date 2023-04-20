@@ -1,0 +1,33 @@
+﻿<Window x:Class="Practika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:Practika"
+        mc:Ignorable="d"
+        Title="Practika" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button Name="Sum" Content="Сложение" Margin="74,296,0,0" Height="36" Click="Sum1" HorizontalAlignment="Left" Width="248" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.5" FontFamily="Times New Roman" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF4365FB" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Sub" Content="Вычитание" Margin="74,349,0,0" Height="36" Click="Sub1" HorizontalAlignment="Left" Width="248" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.5" FontFamily="Times New Roman" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF4365FB" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Div" Content="Деление" Margin="483,349,0,0" Height="36" Click="Div1" HorizontalAlignment="Left" Width="248" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.5" FontFamily="Times New Roman" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF4365FB" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Mul" Content="Умножение" Margin="483,296,0,0" Height="36" Click="Mul1" HorizontalAlignment="Left" Width="248" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.5" FontFamily="Times New Roman" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF4365FB" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="Calc_gif" gif:ImageBehavior.AnimatedSource="Calc.gif" Margin="33,29,34,0" Height="234" VerticalAlignment="Top" gif:ImageBehavior.AutoStart="True" Source="/Calc.gif"  gif:ImageBehavior.AnimateInDesignMode="True"/>
+    </Grid>
+</Window>
